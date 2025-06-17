@@ -13,4 +13,12 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Blazored.SessionStorage" Version="2.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Data\Models\Models.csproj" />
+    </ItemGroup>
+
 </Project>

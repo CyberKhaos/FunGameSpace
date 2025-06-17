@@ -1,0 +1,18 @@
+@if (isLoggedIn)
+{
+    <div @onclick=ToggleAccountDropdown class="acc-container">
+        <span class="acc-username">@userInfo!.Username</span>
+        <span class="acc-avatarFrame"></span>
+    </div>
+    
+    <div class="acc-dropdown @(isDropdownOpen ? "" : "hide")">
+        <button @onclick=Logout class="btn btn-danger">Logout</button>
+    </div>
+}
+else
+{
+    <div class="acc-container">
+        <button @onclick=Login class="btn btn-primary">Login</button>
+        <button @onclick=Register class="btn btn-primary">Register</button>
+    </div>
+}

@@ -5,3 +5,9 @@
       context: .
       dockerfile: UserFrontend/Dockerfile
 
+  userapi:
+    image: userapi
+    build:
+      context: .
+      dockerfile: Apis/UserApi/Dockerfile
+
